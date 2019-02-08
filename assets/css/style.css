@@ -109,3 +109,35 @@ p {
 .form {
     color: #777777
 }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+img {
+    width: 75%;
+    height: 75%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 45px;
+    margin-bottom: 25px;
+  }
+.centerbottom {
+    position: absolute;
+    background: #63a8a4;
+    padding: 10px;
+    width: 68.75%;
+    bottom: 15px;
+    right: 40px;
+    text-align: center;
+    margin: auto;
+    font-weight: 100;
+}
