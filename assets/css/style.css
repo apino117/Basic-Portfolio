@@ -1,12 +1,21 @@
 * {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+body {
+    background-image: url("../images/wavecut_@2X.png");
+}
 .nav-wrapper {
-    background: pink;
-    margin: auto;
-    padding: 40px;
-    width: 960px;
-    position: relative;
+    background: #ffffff;
+    border: solid;
+    border-color: #cccccc;
+    padding: 39.5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
 }
 .nav-title {
     background: #63a8a4;
@@ -14,7 +23,7 @@
     width: 200px;
     position: absolute;
     top: 0;
-    margin-left: 20%;
+    margin-left: 273px;
     text-align: center;
 }
 .nav-links {
@@ -22,22 +31,64 @@
     position: absolute;
     right: 0;
     top: 15px;
-    margin-right: 15%;
+    margin-right: 23%;
     text-align: center;
 }
 li {
     display: inline;
 }
-.vl {
-    border-left: 6px solid #f1f1f1;
-    height: 20px;
-  }
-h1 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
 .main-wrapper {
-    margin: 10px;
-    background: blue;
+    border-color: #dddddd;
+    border: solid;
+    border-width: 1px;
+    padding: 39.5px;
+    background: #ffffff;
     width: 960px;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h2 {
+    color: #63a8a4;
+    font-size: 30px;
+}
+hr {
+    border: 1px solid #b3b3b3;
+}
+#alexpic {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    height: 25%;
+    width: 25%;
+    border: solid;
+    border-color: #666666;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+p {
+    padding: 25px;
+    line-height: 2;
+}
+.footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+}
+#footer-line {
+    background: #63a8a4;
+    padding: 5px;
+    margin: auto;
+    border: #63a8a4
+}
+#copyright {
+    background: #666666;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    color: #b3b3b3;
 }
