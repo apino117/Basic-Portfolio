@@ -16,6 +16,7 @@ body {
     position: fixed;
     top: 0;
     left: 0px;
+    z-index: 20;
 }
 .nav-title {
     background: #63a8a4;
@@ -36,6 +37,10 @@ body {
 }
 li {
     display: inline;
+}
+li:not(:first-child):before {
+    content: "|";
+    padding: 11px;
 }
 .main-wrapper {
     border-color: #dddddd;
@@ -77,13 +82,15 @@ p {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin: auto;
+    margin: 0;
+    left: 0;
 }
 #footer-line {
     background: #63a8a4;
     padding: 5px;
-    margin: auto;
-    border: #63a8a4
+    margin: 0;
+    border: #63a8a4;
+    width: 100%;
 }
 #copyright {
     background: #666666;
